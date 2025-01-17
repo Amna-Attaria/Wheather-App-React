@@ -48,11 +48,11 @@ const Wheather = () => {
         {weatherData.length > 0 ? (
           weatherData.map((data, index) => (
             <div className="center" key={index}>
-              <h3>Wheather in  {data.name}</h3>
-              <p>Country : {data.sys.country}</p>
-              <p>Temperature : {data.main.temp}°C</p>
-              <p>Feels Like : {data.main.feels_like}°C</p>
-              <p>Humidity : {data.main.humidity}%</p>
+              <h3 className='white'>Wheather in  {data.name}</h3>
+              <p className='white'>Country : {data.sys.country}</p>
+              <p className='white'>Temperature : {data.main.temp}°C</p>
+              <p className='white'>Feels Like : {data.main.feels_like}°C</p>
+              <p className='white'>Humidity : {data.main.humidity}%</p>
             </div>
           ))
         ) : (
